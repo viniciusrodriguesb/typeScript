@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo</title>
+
+    <script>
+        function executar(){
+            var n1 = document.getElementById('number1').value;
+            var n2 = document.getElementById('number2').value;
+            var n3 = document.getElementById('number3').value;
+
+            var total = multiplicar(parseInt(n1), parseInt(n2), parseInt(n3));
+            alert(total);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="n1">Digite o primeiro número: </label><br>
+        <input type="number" id="number1" name="number1"><br>
+
+        <label for="n2">Digite o segundo número: </label><br>
+        <input type="number" id="number2" name="number2"><br>
+
+        <label for="n3">Digite o terceiro número: </label><br>
+        <input type="number" id="number3" name="number3"><br><br>
+
+        <button onclick="executar">Multiplicar</button>
+    </form>
+   
+<script src="../dist/appNumbers.js"></script>
+</body>
+</html>
