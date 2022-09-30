@@ -2,7 +2,13 @@
 exports.__esModule = true;
 var caminhao_1 = require("./caminhao");
 var moto_1 = require("./moto");
-var teste = new caminhao_1.Caminhao('amarelo', 'mercedes', 'xxx');
-var testeMoto = new moto_1.Moto('vermelha', 'kawasaki', 'ninja');
-teste.acelerar();
-testeMoto.empinar();
+var veiculo_1 = require("./veiculo");
+var carro = new veiculo_1.Veiculo(100);
+console.log(carro.mostrarVelocidadeMaxima());
+console.log(carro.acelerar(120));
+var caminhao = new caminhao_1.Caminhao(80);
+console.log(caminhao.acelerar(80));
+var moto = new moto_1.Moto(70);
+moto.cor = "vermelha";
+console.log(moto.cor);
+console.log(moto.empinar = true);

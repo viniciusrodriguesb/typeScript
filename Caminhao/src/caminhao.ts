@@ -1,7 +1,11 @@
 import { Veiculo } from "./veiculo"
 
 export class Caminhao extends Veiculo{
-        descarregar(){
+    tamanhoCacamba: number;
+
+    
+
+        descarregar(): void{
         console.log('descarregando...');
     }
 }

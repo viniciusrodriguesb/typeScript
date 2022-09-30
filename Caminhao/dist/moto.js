@@ -22,9 +22,6 @@ var Moto = /** @class */ (function (_super) {
     function Moto() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Moto.prototype.empinar = function () {
-        console.log('empinando');
-    };
     return Moto;
 }(veiculo_1.Veiculo));
 exports.Moto = Moto;

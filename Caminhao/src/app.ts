@@ -1,9 +1,16 @@
 import { Caminhao } from "./caminhao";
 import { Moto } from "./moto";
+import { Veiculo } from "./veiculo";
 
-let teste = new Caminhao('amarelo','mercedes','xxx');
+let carro: Veiculo = new Veiculo(100);
 
-let testeMoto = new Moto('vermelha','kawasaki','ninja');
+console.log(carro.mostrarVelocidadeMaxima())
+console.log(carro.acelerar(120));
 
-teste.acelerar();
-testeMoto.empinar();
+let caminhao: Caminhao = new Caminhao(80);
+console.log(caminhao.acelerar(80));
+
+let moto: Moto = new Moto(70);
+moto.cor = "vermelha";
+console.log(moto.cor);
+console.log(moto.empinar = true);

@@ -1,17 +1,23 @@
 export class Veiculo{
-    cor: string; fabricante:string; modelo:string;
+    cor: string; fabricante:string; modelo:string; velocidade:number;
    
-     constructor(cor:string, fabricante:string, modelo:string){
-         this.cor = cor;
-         this.fabricante = fabricante;
-         this.modelo = modelo;
+     constructor(velocidade: number){
+         this.velocidade = velocidade;
      }
  
-     acelerar(){
-         console.log('acelerando....');
+     acelerar(velocidade:number): void{
+        if(this.velocidade > velocidade){
+            console.log(`Acelerando a... ${velocidade} km/h`);
+        }else{
+            console.log(`Acelerando a ${this.velocidade} km/h`)
+        }
      }
  
-     parar(){
+     parar(): void{
          console.log('parando.....');
+     }
+
+     mostrarVelocidadeMaxima():void{
+        console.log(`A velocidade maxima é: ${this.velocidade}`)
      }
  }
