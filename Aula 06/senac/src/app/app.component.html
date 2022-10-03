@@ -1,0 +1,7 @@
+<S-cabecalho></S-cabecalho>
+{{alunos.nome}}
+<div [class.light] = "alunos.aprovado" [hidden] = "!alunos.aprovado">
+    O aluno está aprovado!
+</div>
+
+<input type="text" [value]="alunos.nome">

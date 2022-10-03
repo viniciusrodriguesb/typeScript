@@ -1,0 +1,15 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h3{
+    margin-right: 1320px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
