@@ -1,15 +1,16 @@
-<div [hidden] = "!estudante.aprovado">
+<div *ngIf="!estudante.aprovado">
     {{estudante.nome}}
 </div>
-<div [class.aprovado] = "estudante.aprovado" [hidden] = "!estudante.aprovado">
+
+<div *ngIf="estudante.aprovado">
+    {{estudante.nome}}
+</div>
+
+<div *ngIf="estudante.aprovado" [class.aprovado] = "estudante.aprovado">
     O aluno está aprovado!
 </div>
 
-<div [hidden] = "estudante.aprovado">
-    {{estudante.nome}}
-</div>
-
-<div [class.reprovado] = "!estudante.aprovado" [hidden] = "estudante.aprovado">
+<div *ngIf="!estudante.aprovado" [class.reprovado] = "!estudante.aprovado">
     O aluno está reprovado!
 </div>
 

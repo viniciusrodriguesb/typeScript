@@ -1,3 +1,2 @@
 <snc-cabecalho></snc-cabecalho>
-<snc-estudante [estudante]=anaClara></snc-estudante>
-<snc-estudante [estudante]=vinicius></snc-estudante>
+<snc-estudante *ngFor="let estudante of estudantes" [estudante]="estudante"></snc-estudante>
