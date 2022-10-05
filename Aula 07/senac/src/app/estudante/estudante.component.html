@@ -1,0 +1,15 @@
+<div [hidden] = "!estudante.aprovado">
+    {{estudante.nome}}
+</div>
+<div [class.aprovado] = "estudante.aprovado" [hidden] = "!estudante.aprovado">
+    O aluno está aprovado!
+</div>
+
+<div [hidden] = "estudante.aprovado">
+    {{estudante.nome}}
+</div>
+
+<div [class.reprovado] = "!estudante.aprovado" [hidden] = "estudante.aprovado">
+    O aluno está reprovado!
+</div>
+
