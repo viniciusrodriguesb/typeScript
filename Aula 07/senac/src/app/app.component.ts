@@ -10,5 +10,6 @@ export class AppComponent {
   estudantes: Estudante[] = 
 [
   {nome: 'Ana Clara', aprovado: true, escola: 'Senac'},
-  {nome: 'Vinicus', aprovado: false, escola: 'Senac'}
-]}
+  {nome: 'Vinicius', aprovado: false, escola: 'Senac'}  
+]
+}
