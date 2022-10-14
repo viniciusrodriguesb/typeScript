@@ -1,0 +1,15 @@
+import { Categoria } from "./categoria1/categoria1.model";
+
+export class CategoriasService{
+    categorias: Categoria[] = [
+        { id: 1, titulo: 'Ação', imagePath: 'https://www.sofilmesgratis.com/wp-content/uploads/2021/12/Filmes-de-acao.webp'},
+        { id: 2, titulo: 'Aventura', imagePath: 'https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/02/Tomb-Raider-Lara.jpg'},
+        { id: 3, titulo: 'Suspense', imagePath: 'https://occ-0-2567-41.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABUG8Dx8RpUiGCGwnMgdYUKetzhAWYjr2U-d6-rYbMjLJ24_tw0B74kG89oyZXYN81RC8WJms0lt11cSfVIn76MzkzD4buKaBgmAv.jpg?r=dfc'}
+      ];
+      
+    constructor(){}
+
+    listarCategorias(){
+        return this.categorias;
+    }
+}

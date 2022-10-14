@@ -8,6 +8,9 @@ import { PrincipalComponent } from './principal/principal.component';
 import { RouterModule } from '@angular/router';
 import { SobreComponent } from './sobre/sobre.component';
 import { ROUTES } from './app.routes';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { Categoria1Component } from './categoria/categoria1/categoria1.component';
+import { CategoriasService } from './categoria/categoria.service';
 
 @NgModule({
   declarations: [
@@ -15,13 +18,15 @@ import { ROUTES } from './app.routes';
     CabecalhoComponent,
     RodapeComponent,
     PrincipalComponent,
-    SobreComponent
+    SobreComponent,
+    CategoriaComponent,
+    Categoria1Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [CategoriasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

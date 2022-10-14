@@ -1,0 +1,22 @@
+<section class="jumbotron text-center">
+    <div class="container align-self-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Categorias</h2>
+                <p class="lead text-muted">Verifique abaixo as categorias disponiveis em nosso site:</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-center">
+    <div class="container align-self-center">
+        <div class="row">
+
+           <div *ngFor="let categoria of categorias">
+               <cin-categoria1 [categoria]="categoria"></cin-categoria1>
+           </div>
+
+        </div>
+    </div>
+</section>
