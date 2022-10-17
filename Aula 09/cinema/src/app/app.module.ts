@@ -11,6 +11,7 @@ import { ROUTES } from './app.routes';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { Categoria1Component } from './categoria/categoria1/categoria1.component';
 import { CategoriasService } from './categoria/categoria.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CategoriasService } from './categoria/categoria.service';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule
   ],
   providers: [CategoriasService],
   bootstrap: [AppComponent]
